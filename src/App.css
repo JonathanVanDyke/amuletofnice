@@ -41,7 +41,7 @@
 
 .Card-Title {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   margin-left: 101px;
   height: 40px;
   width: 300px;
