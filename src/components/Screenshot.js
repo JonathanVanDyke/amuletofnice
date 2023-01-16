@@ -3,8 +3,18 @@ import { useScreenshot, createFileName } from "use-react-screenshot";
 import UploadImage from "./UploadImage";
 import borderArts from "../constants/borderArts";
 import genericAttackRed from '../assets/generic-attack-red.png'
+import ReactMarkdown from 'react-markdown'
+import rehypeRaw from "rehype-raw";
 
-const Screenshot = ({ title, body, borderName, rightPos, topPos, scale }) => {
+const Screenshot = ({ 
+  title, 
+  body, 
+  type, 
+  borderName, 
+  rightPos, 
+  topPos, 
+  scale 
+}) => {
   
   const ref = createRef(null);
   // eslint-disable-next-line
@@ -50,7 +60,14 @@ const Screenshot = ({ title, body, borderName, rightPos, topPos, scale }) => {
             {title}
           </div>
           <div className="Card-Body">
-            {body}
+            <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+              {body}
+            </ReactMarkdown>
+          </div>
+          <div className="Card-Type">
+            <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+              {type}
+            </ReactMarkdown>
           </div>
           <img
             className='border'

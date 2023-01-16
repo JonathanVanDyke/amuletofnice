@@ -48,11 +48,19 @@ const Homepage = () => {
     setBody(e.target.value)
   }
 
+  // Type Text
+  const [type, setType] = useState("")
+
+  const onTypeUpdate = (e) => {
+    setType(e.target.value)
+  }
+
   return (
     <div className='Homepage'>
       <TextOptions 
         onTitleUpdate={onTitleUpdate}
         onBodyUpdate={onBodyUpdate}
+        onTypeUpdate={onTypeUpdate}
       />
       <Screenshot 
         borderName={borderName} 
@@ -61,6 +69,7 @@ const Homepage = () => {
         scale={scale}
         title={title}
         body={body}
+        type={type}
       />
       <ImageOptions 
         scale={scale}
