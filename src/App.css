@@ -37,6 +37,18 @@
   font-size: calc(10px + 2vmin);
 }
 
+.Card-Title {
+  position: absolute;
+    z-index: 1;
+    margin-left: 101px;
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    top: 187px;
+}
 
 @media (prefers-color-scheme: dark) {
   .myclass {

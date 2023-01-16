@@ -42,6 +42,9 @@ const Screenshot = ({ borderName }) => {
         <div  
           className="card"
         >
+          <div className="Card-Title">
+            Amulet of Nice
+          </div>
           <img
             className='border'
             src={borderArts(borderName)}
