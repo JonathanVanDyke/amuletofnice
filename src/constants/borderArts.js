@@ -10,4 +10,9 @@ const borderArts = (borderName) => {
   return borderArt[borderName]
 }
 
+export const BORDER_ART_LABELS = [
+  { value: 'Generic Attack - Red', label: 'generic-attack-red' },
+  { value: 'Generic Attack - Blue', label: 'generic-attack-blue' },
+];
+
 export default borderArts

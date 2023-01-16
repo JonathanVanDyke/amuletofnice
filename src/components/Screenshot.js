@@ -17,8 +17,6 @@ const Screenshot = ({ borderName }) => {
     setImageUrl(imageURL);
   }, [imageURL])
 
-  console.log(image)
-
   const download = (image, { name = "img", extension = "jpg" } = {}) => {
     const a = document.createElement("a");
     a.href = image;
