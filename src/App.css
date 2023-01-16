@@ -19,6 +19,8 @@
   border-radius: 30px;
   display: flex;
   position: relative;
+  height: auto;
+  width: 100%;
 }
 
 .Homepage {
@@ -99,18 +101,12 @@
 }
 
 .clip-art-mask {
-  clip-path: polygon(
-    0% 5%,
-    5% 0%,
-    95% 0%,
-    100% 5%,
-    100% 95%,
-    95% 100%,
-    5% 100%,
-    0% 95%
-  );
-  width: 500px;
-  height: 100%;
+  clip-path: polygon(5% 10%, 10% 5%, 90% 5%, 95% 10%, 95% 95%, 90% 100%, 10% 100%, 5% 95%);
+  width: 480px;
+  height: 360px;
+  padding-top: 75px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .Image-Options {
