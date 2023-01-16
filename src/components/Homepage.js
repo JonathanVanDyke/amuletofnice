@@ -1,13 +1,13 @@
 import React from 'react';
 import Screenshot from './Screenshot';
-import Select from './Select';
+import Dropdown from './Dropdown';
 
 const Homepage = () => {
 
   return (
     <div className='Homepage'>
       <Screenshot />
-      <Select />
+      <Dropdown />
     </div>
   )
 }

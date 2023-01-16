@@ -6,16 +6,23 @@ const options = [
   { value: 'Generic Attack - Blue', label: 'generic-attack-blue' },
 ];
 
-export default function App() {
+const Dropdown = ({ passSelectionToParent = () => {} }) => {
   const [selectedOption, setSelectedOption] = useState(null);
+
+  const handleSelect = (e) => {
+    setSelectedOption(e.label)
+    passSelectionToParent(e.label)
+  }
 
   return (
     <div>
       <Select
         defaultValue={selectedOption}
-        onChange={setSelectedOption}
+        onChange={handleSelect}
         options={options}
       />
     </div>
   );
 }
+
+export default Dropdown

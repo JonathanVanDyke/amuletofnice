@@ -1,8 +1,14 @@
 import React, { createRef, useState, useEffect } from "react";
 import { useScreenshot, createFileName } from "use-react-screenshot";
 import UploadImage from "./UploadImage";
+import genericAttackRed from '../assets/generic-attack-red.png'
+import borderArts from "../constants/borderArts";
 
 const Screenshot = () => {
+  console.log('here we go')
+  borderArts()
+  console.log('did it wurk?')
+  
   const ref = createRef(null);
   const [image, takeScreenShot] = useScreenshot({
     type: "image/jpeg",
@@ -35,7 +41,6 @@ const Screenshot = () => {
       <div
         ref={ref}
         style={{
-          border: "1px solid #ccc",
           padding: "10px",
           marginTop: "20px"
         }}
@@ -45,7 +50,7 @@ const Screenshot = () => {
         >
           <img
             className='border'
-            src="images/generic-attack-red.png"
+            src={genericAttackRed}
             alt="card-border"
             height="700px"
             width="500px"
