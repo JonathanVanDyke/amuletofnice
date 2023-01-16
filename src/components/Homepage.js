@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Screenshot from './Screenshot';
 import ImageOptions from './ImageOptions';
+import TextOptions from './TextOptions';
 
 const Homepage = () => {
   // DropDown
@@ -33,13 +34,24 @@ const Homepage = () => {
     setScale(e.target.value);
   }
 
+  // Title Text
+  const [title, setTitle] = useState("")
+
+  const onTitleUpdate = (e) => {
+    setTitle(e.target.value)
+  }
+
   return (
     <div className='Homepage'>
+      <TextOptions 
+        onTitleUpdate={onTitleUpdate}
+      />
       <Screenshot 
         borderName={borderName} 
         rightPos={rightPos} 
         topPos={topPos} 
         scale={scale}
+        title={title}
       />
       <ImageOptions 
         scale={scale}

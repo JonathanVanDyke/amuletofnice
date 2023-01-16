@@ -4,7 +4,7 @@ import UploadImage from "./UploadImage";
 import borderArts from "../constants/borderArts";
 import genericAttackRed from '../assets/generic-attack-red.png'
 
-const Screenshot = ({ borderName, rightPos, topPos, scale }) => {
+const Screenshot = ({ title, borderName, rightPos, topPos, scale }) => {
   
   const ref = createRef(null);
   // eslint-disable-next-line
@@ -47,7 +47,7 @@ const Screenshot = ({ borderName, rightPos, topPos, scale }) => {
           className="card"
         >
           <div className="Card-Title">
-            Amulet of Nice
+            {title}
           </div>
           <img
             className='border'
