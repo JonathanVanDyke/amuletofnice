@@ -7,6 +7,7 @@ import genericAttackRed from '../assets/generic-attack-red.png'
 const Screenshot = ({ borderName, rightPos, topPos, scale }) => {
   
   const ref = createRef(null);
+  // eslint-disable-next-line
   const [image, takeScreenShot] = useScreenshot({
     type: "image/png",
     quality: 1.0
