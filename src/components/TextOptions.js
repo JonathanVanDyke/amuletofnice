@@ -10,8 +10,32 @@ const TextOptions = ({
     <div className="TextOptions">
       <h5 style={{ color: "white", margin: "4px" }}>TITLE</h5>
       <input className="TitleInput" type="text-box" onChange={onTitleUpdate} />
-      <h5 style={{ color: "white", margin: "4px" }}>COST</h5>
-      <input className="CostInput" type="text-box" onChange={onCostUpdate} />
+      <div className="CardInputStats">
+        <div>
+          <h5 style={{ color: "white", margin: "4px" }}>COST</h5>
+          <input
+            className="CostInput"
+            type="text-box"
+            onChange={onCostUpdate}
+          />
+        </div>
+        <div>
+          <h5 style={{ color: "white", margin: "4px" }}>ATK</h5>
+          <input
+            className="CostInput"
+            type="text-box"
+            onChange={onCostUpdate}
+          />
+        </div>
+        <div>
+          <h5 style={{ color: "white", margin: "4px" }}>DEF</h5>
+          <input
+            className="CostInput"
+            type="text-box"
+            onChange={onCostUpdate}
+          />
+        </div>
+      </div>
       <h5 style={{ color: "white", margin: "4px" }}>BODY</h5>
       <textarea
         className="BodyInput"
