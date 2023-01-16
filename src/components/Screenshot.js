@@ -2,6 +2,7 @@ import React, { createRef, useState, useEffect } from "react";
 import { useScreenshot, createFileName } from "use-react-screenshot";
 import UploadImage from "./UploadImage";
 import borderArts from "../constants/borderArts";
+import genericAttackRed from '../assets/generic-attack-red.png'
 
 const Screenshot = ({ borderName }) => {
   
@@ -55,7 +56,7 @@ const Screenshot = ({ borderName }) => {
           />
           <img 
             className="card-art"
-            src={imageURL} 
+            src={imageURL || genericAttackRed} 
             height="100%" 
             width="500" 
             alt="card-background"
