@@ -7,7 +7,7 @@ const Screenshot = ({ borderName }) => {
   
   const ref = createRef(null);
   const [image, takeScreenShot] = useScreenshot({
-    type: "image/jpeg",
+    type: "image/png",
     quality: 1.0
   });
 
@@ -17,7 +17,7 @@ const Screenshot = ({ borderName }) => {
     setImageUrl(imageURL);
   }, [imageURL])
 
-  const download = (image, { name = "img", extension = "jpg" } = {}) => {
+  const download = (image, { name = "img", extension = "png" } = {}) => {
     const a = document.createElement("a");
     a.href = image;
     a.download = createFileName(extension, name);
@@ -31,13 +31,14 @@ const Screenshot = ({ borderName }) => {
   };
   return (
     <div>
-      <button onClick={downloadScreenshot}>Download screenshot</button>
+      <button 
+        onClick={downloadScreenshot}
+        className='Download-Button'
+      >
+        Download screenshot
+      </button>
       <div
         ref={ref}
-        style={{
-          padding: "10px",
-          marginTop: "20px"
-        }}
       >
         <div  
           className="card"
@@ -60,10 +61,10 @@ const Screenshot = ({ borderName }) => {
             alt="card-background"
           />
         </div>
-        <UploadImage
-          handleUpload={handleUpload}
-        />
       </div>
+      <UploadImage
+        handleUpload={handleUpload}
+      />
     </div>
   );
 };

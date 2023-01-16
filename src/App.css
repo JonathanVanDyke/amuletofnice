@@ -39,15 +39,19 @@
 
 .Card-Title {
   position: absolute;
-    z-index: 1;
-    margin-left: 101px;
-    height: 40px;
-    width: 300px;
-    font-size: 20px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    top: 187px;
+  z-index: 1;
+  margin-left: 101px;
+  height: 40px;
+  width: 300px;
+  font-size: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 41px;
+}
+
+.Download-Button {
+  margin-bottom:10px;
 }
 
 @media (prefers-color-scheme: dark) {
