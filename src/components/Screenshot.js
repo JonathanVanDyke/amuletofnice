@@ -54,13 +54,15 @@ const Screenshot = ({ borderName }) => {
             height="700px"
             width="500px"
           />
-          <img 
-            className="card-art"
-            src={imageURL || genericAttackRed} 
-            height="100%" 
-            width="500" 
-            alt="card-background"
-          />
+          <div className="clip-art-mask">
+            <img 
+              className="card-art"
+              src={imageURL || genericAttackRed} 
+              height="100%" 
+              width="500" 
+              alt="card-background"
+            />
+          </div>
         </div>
       </div>
       <UploadImage

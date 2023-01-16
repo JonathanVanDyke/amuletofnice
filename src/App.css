@@ -12,6 +12,7 @@
 .border {
   position: relative;
   margin-right: -500px;
+  z-index: 1;
 }
 
 .card-art {
@@ -52,6 +53,21 @@
 
 .Download-Button {
   margin-bottom:10px;
+}
+
+.clip-art-mask {
+  clip-path: polygon(
+    0% 5%,
+    5% 0%,
+    95% 0%,
+    100% 5%,
+    100% 95%,
+    95% 100%,
+    5% 100%,
+    0% 95%
+  );
+  width: 500px;
+  height: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
