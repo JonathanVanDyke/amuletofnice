@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/amuletofnice/static/css/main.90e62571.css",
-    "main.js": "/amuletofnice/static/js/main.8d32d67b.js",
+    "main.css": "/amuletofnice/static/css/main.065b4b9c.css",
+    "main.js": "/amuletofnice/static/js/main.b6c6b00a.js",
     "static/js/787.82a693a1.chunk.js": "/amuletofnice/static/js/787.82a693a1.chunk.js",
+    "static/media/generic-attack-blue.png": "/amuletofnice/static/media/generic-attack-blue.058749e271787aab3e7f.png",
+    "static/media/generic-attack-red.png": "/amuletofnice/static/media/generic-attack-red.b6ef84f43acf77888e63.png",
     "index.html": "/amuletofnice/index.html",
-    "main.90e62571.css.map": "/amuletofnice/static/css/main.90e62571.css.map",
-    "main.8d32d67b.js.map": "/amuletofnice/static/js/main.8d32d67b.js.map",
+    "main.065b4b9c.css.map": "/amuletofnice/static/css/main.065b4b9c.css.map",
+    "main.b6c6b00a.js.map": "/amuletofnice/static/js/main.b6c6b00a.js.map",
     "787.82a693a1.chunk.js.map": "/amuletofnice/static/js/787.82a693a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90e62571.css",
-    "static/js/main.8d32d67b.js"
+    "static/css/main.065b4b9c.css",
+    "static/js/main.b6c6b00a.js"
   ]
 }
