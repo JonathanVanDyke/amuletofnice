@@ -35,6 +35,12 @@
   font-size: 20px;
 }
 
+.BodyInput {
+  width: 300px;
+  height: 300px;
+  font-size: 20px;
+}
+
 .DropDown {
   width: 300px;
 }
@@ -60,6 +66,19 @@
   justify-content: left;
   align-items: center;
   padding-top: 41px;
+}
+
+.Card-Body {
+  position: absolute;
+  z-index: 2;
+  margin-left: 45px;
+  height: 300px;
+  width: 300px;
+  font-size: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 300px;
 }
 
 .Download-Button {

@@ -41,10 +41,18 @@ const Homepage = () => {
     setTitle(e.target.value)
   }
 
+  // Body Text
+  const [body, setBody] = useState("")
+
+  const onBodyUpdate = (e) => {
+    setBody(e.target.value)
+  }
+
   return (
     <div className='Homepage'>
       <TextOptions 
         onTitleUpdate={onTitleUpdate}
+        onBodyUpdate={onBodyUpdate}
       />
       <Screenshot 
         borderName={borderName} 
@@ -52,6 +60,7 @@ const Homepage = () => {
         topPos={topPos} 
         scale={scale}
         title={title}
+        body={body}
       />
       <ImageOptions 
         scale={scale}
