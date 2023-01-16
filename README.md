@@ -1,4 +1,3 @@
 # Deploy
 
-`npm run deploy` 
-with `gh-pages` installed globally
+note to self: be very careful deploying gh-pages
