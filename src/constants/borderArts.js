@@ -1,14 +1,13 @@
+import genericAttackRed from '../assets/generic-attack-red.png';
+import genericAttackBlue from '../assets/generic-attack-blue.png';
 
-// const borderArt = {
-//   'generic-attack-red': genericAttackRed,
-//   'generic-attack-blue': genericAttackBlue,
-// }
+const borderArt = {
+  'generic-attack-red': genericAttackRed,
+  'generic-attack-blue': genericAttackBlue,
+}
 
-// import fs from 'browserify-fs';
-
-const borderArts = () => {
-  // fs.readdir('../assets', (file) => { console.log(file) })
-  console.log('sigh')
+const borderArts = (borderName) => {
+  return borderArt[borderName]
 }
 
 export default borderArts

@@ -6,12 +6,13 @@ const options = [
   { value: 'Generic Attack - Blue', label: 'generic-attack-blue' },
 ];
 
-const Dropdown = ({ passSelectionToParent = () => {} }) => {
+const Dropdown = ({ passSelectionToParent = () => {}, onDropDownSelect = () => {} }) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleSelect = (e) => {
     setSelectedOption(e.label)
     passSelectionToParent(e.label)
+    onDropDownSelect(e.label)
   }
 
   return (
