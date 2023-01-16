@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/amuletofnice/static/css/main.90e62571.css",
+    "main.js": "/amuletofnice/static/js/main.8d32d67b.js",
+    "static/js/787.82a693a1.chunk.js": "/amuletofnice/static/js/787.82a693a1.chunk.js",
+    "index.html": "/amuletofnice/index.html",
+    "main.90e62571.css.map": "/amuletofnice/static/css/main.90e62571.css.map",
+    "main.8d32d67b.js.map": "/amuletofnice/static/js/main.8d32d67b.js.map",
+    "787.82a693a1.chunk.js.map": "/amuletofnice/static/js/787.82a693a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90e62571.css",
+    "static/js/main.8d32d67b.js"
+  ]
+}
