@@ -7,7 +7,11 @@ const UploadImage = ({ handleUpload }) => {
 
   return (
     <>
-      <input type="file" multiple accept="image/*" onChange={onImageChange} />
+      <input 
+        type="file" 
+        accept="image/*" 
+        onChange={onImageChange} 
+        />
     </>
   )
 }
