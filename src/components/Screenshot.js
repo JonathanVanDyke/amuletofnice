@@ -18,6 +18,12 @@ const Screenshot = ({ borderName }) => {
     setImageUrl(imageURL);
   }, [imageURL])
 
+  const [scale, setScale] = useState(1)
+
+  useEffect(() => {
+    setScale(scale);
+  }, [scale])
+
   const download = (image, { name = "img", extension = "png" } = {}) => {
     const a = document.createElement("a");
     a.href = image;
@@ -30,6 +36,11 @@ const Screenshot = ({ borderName }) => {
     const url = URL.createObjectURL(e)
     setImageUrl(url);
   };
+
+  const onSliderChange = (e) => {
+    setScale(e.target.value);
+  }
+
   return (
     <div>
       <button 
@@ -57,6 +68,7 @@ const Screenshot = ({ borderName }) => {
           <div className="clip-art-mask">
             <img 
               className="card-art"
+              style={{ scale: `${scale}` }}
               src={imageURL || genericAttackRed} 
               height="100%" 
               width="500" 
@@ -65,6 +77,8 @@ const Screenshot = ({ borderName }) => {
           </div>
         </div>
       </div>
+      <input type="range" min="0" max="3" step=".01" value={scale}
+        onChange={onSliderChange} />
       <UploadImage
         handleUpload={handleUpload}
       />
