@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 
-const Dropdown = ({ options = [], defaultValue = null, onDropDownSelect = () => {} }) => {
+const Dropdown = ({ placeholder = "Select...", options = [], defaultValue = null, onDropDownSelect = () => {} }) => {
   const handleSelect = (e) => {
     onDropDownSelect(e.label)
   }
-  
+
   return (
     <div>
       <Select
+        placeholder={placeholder}
         defaultValue={defaultValue}
         isSearchable={false}
         className='DropDown'
