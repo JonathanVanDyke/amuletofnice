@@ -1,77 +1,77 @@
-import React, { useState, useEffect } from 'react';
-import Screenshot from './Screenshot';
-import ImageOptions from './ImageOptions';
-import TextOptions from './TextOptions';
+import React, { useState, useEffect } from "react";
+import Screenshot from "./Screenshot";
+import ImageOptions from "./ImageOptions";
+import TextOptions from "./TextOptions";
 
 const Homepage = () => {
   // DropDown
-  const [borderName, setBorderName] = useState('generic-attack-red')
+  const [borderName, setBorderName] = useState("generic-attack-red");
 
   const onDropDownSelect = (name) => {
-    setBorderName(name)
-  }
+    setBorderName(name);
+  };
 
   // Pos
   const [rightPos, setRightPos] = useState(0);
   const [topPos, setTopPos] = useState(0);
 
   const onTopChange = (e) => {
-    setTopPos(e.target.value)
-  }
+    setTopPos(e.target.value);
+  };
 
   const onRightChange = (e) => {
-    setRightPos(e.target.value)
-  }
+    setRightPos(e.target.value);
+  };
 
   // Scale
-  const [scale, setScale] = useState(1)
+  const [scale, setScale] = useState(1);
 
   useEffect(() => {
     setScale(scale);
-  }, [scale])
+  }, [scale]);
 
   const onSliderChange = (e) => {
     setScale(e.target.value);
-  }
+  };
 
   // Title Text
-  const [title, setTitle] = useState("")
+  const [title, setTitle] = useState("");
 
   const onTitleUpdate = (e) => {
-    setTitle(e.target.value)
-  }
+    setTitle(e.target.value);
+  };
 
   // Body Text
-  const [body, setBody] = useState("")
+  const [body, setBody] = useState("");
 
   const onBodyUpdate = (e) => {
-    setBody(e.target.value)
-  }
+    setBody(e.target.value);
+  };
 
   // Type Text
-  const [type, setType] = useState("")
+  const [type, setType] = useState("");
 
   const onTypeUpdate = (e) => {
-    setType(e.target.value)
-  }
+    setType(e.target.value);
+  };
 
   return (
-    <div className='Homepage'>
-      <TextOptions 
+    <div className="Homepage">
+      <TextOptions
         onTitleUpdate={onTitleUpdate}
         onBodyUpdate={onBodyUpdate}
         onTypeUpdate={onTypeUpdate}
       />
-      <Screenshot 
-        borderName={borderName} 
-        rightPos={rightPos} 
-        topPos={topPos} 
+      <Screenshot
+        borderName={borderName}
+        rightPos={rightPos}
+        topPos={topPos}
         scale={scale}
         title={title}
         body={body}
         type={type}
       />
-      <ImageOptions 
+      <ImageOptions
         scale={scale}
         topPos={topPos}
         rightPos={rightPos}
@@ -81,7 +81,7 @@ const Homepage = () => {
         onDropDownSelect={onDropDownSelect}
       />
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;
