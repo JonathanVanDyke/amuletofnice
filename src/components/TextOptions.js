@@ -1,10 +1,17 @@
 import React from "react";
 
-const TextOptions = ({ onTitleUpdate, onBodyUpdate, onTypeUpdate }) => {
+const TextOptions = ({
+  onTitleUpdate,
+  onBodyUpdate,
+  onTypeUpdate,
+  onCostUpdate,
+}) => {
   return (
     <div className="TextOptions">
       <h5 style={{ color: "white", margin: "4px" }}>TITLE</h5>
       <input className="TitleInput" type="text-box" onChange={onTitleUpdate} />
+      <h5 style={{ color: "white", margin: "4px" }}>COST</h5>
+      <input className="CostInput" type="text-box" onChange={onCostUpdate} />
       <h5 style={{ color: "white", margin: "4px" }}>BODY</h5>
       <textarea
         className="BodyInput"

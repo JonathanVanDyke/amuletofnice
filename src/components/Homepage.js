@@ -24,7 +24,7 @@ const Homepage = () => {
   };
 
   // Scale
-  const [scale, setScale] = useState(1);
+  const [scale, setScale] = useState(1.35);
 
   useEffect(() => {
     setScale(scale);
@@ -55,12 +55,20 @@ const Homepage = () => {
     setType(e.target.value);
   };
 
+  // Cost Update
+  const [cost, setCost] = useState(0);
+
+  const onCostUpdate = (e) => {
+    setCost(e.target.value);
+  };
+
   return (
     <div className="Homepage">
       <TextOptions
         onTitleUpdate={onTitleUpdate}
         onBodyUpdate={onBodyUpdate}
         onTypeUpdate={onTypeUpdate}
+        onCostUpdate={onCostUpdate}
       />
       <Screenshot
         borderName={borderName}
@@ -70,6 +78,7 @@ const Homepage = () => {
         title={title}
         body={body}
         type={type}
+        cost={cost}
       />
       <ImageOptions
         scale={scale}
