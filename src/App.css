@@ -81,6 +81,34 @@
   font-family: 'card-title';
 }
 
+.Card-Attack {
+  position: absolute;
+  z-index: 2;
+  margin-left: -56px;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 626px;
+  font-family: 'card-title';
+  font-size: 30px;
+}
+
+.Card-Defense {
+  position: absolute;
+  z-index: 2;
+  margin-left: 256px;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 625px;
+  font-family: 'card-title';
+  font-size: 30px;
+}
+
 .Card-Cost {
   position: absolute;
   z-index: 2;

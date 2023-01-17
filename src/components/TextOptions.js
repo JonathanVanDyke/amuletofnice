@@ -5,6 +5,8 @@ const TextOptions = ({
   onBodyUpdate,
   onTypeUpdate,
   onCostUpdate,
+  onAttackUpdate,
+  onDefenseUpdate,
 }) => {
   return (
     <div className="TextOptions">
@@ -24,7 +26,7 @@ const TextOptions = ({
           <input
             className="CostInput"
             type="text-box"
-            onChange={onCostUpdate}
+            onChange={onAttackUpdate}
           />
         </div>
         <div>
@@ -32,7 +34,7 @@ const TextOptions = ({
           <input
             className="CostInput"
             type="text-box"
-            onChange={onCostUpdate}
+            onChange={onDefenseUpdate}
           />
         </div>
       </div>

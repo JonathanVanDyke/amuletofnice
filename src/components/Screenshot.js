@@ -15,6 +15,8 @@ const Screenshot = ({
   topPos,
   scale,
   cost,
+  defense,
+  attack,
 }) => {
   const ref = createRef(null);
   // eslint-disable-next-line
@@ -51,6 +53,8 @@ const Screenshot = ({
         <div className="card">
           <div className="Card-Title">{title}</div>
           <div className="Card-Cost">{cost}</div>
+          <div className="Card-Attack">{attack}</div>
+          <div className="Card-Defense">{defense}</div>
           <div className="Card-Body">
             <ReactMarkdown rehypePlugins={[rehypeRaw]}>{body}</ReactMarkdown>
           </div>

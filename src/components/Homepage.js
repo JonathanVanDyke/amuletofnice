@@ -62,6 +62,20 @@ const Homepage = () => {
     setCost(e.target.value);
   };
 
+  // Attack Update
+  const [attack, setAttack] = useState(0);
+
+  const onAttackUpdate = (e) => {
+    setAttack(e.target.value);
+  };
+
+  // Defense Update
+  const [defense, setDefense] = useState(0);
+
+  const onDefenseUpdate = (e) => {
+    setDefense(e.target.value);
+  };
+
   return (
     <div className="Homepage">
       <TextOptions
@@ -69,6 +83,8 @@ const Homepage = () => {
         onBodyUpdate={onBodyUpdate}
         onTypeUpdate={onTypeUpdate}
         onCostUpdate={onCostUpdate}
+        onAttackUpdate={onAttackUpdate}
+        onDefenseUpdate={onDefenseUpdate}
       />
       <Screenshot
         borderName={borderName}
@@ -79,6 +95,8 @@ const Homepage = () => {
         body={body}
         type={type}
         cost={cost}
+        attack={attack}
+        defense={defense}
       />
       <ImageOptions
         scale={scale}
