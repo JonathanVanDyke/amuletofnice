@@ -225,7 +225,7 @@ body {
   src: local('card-cost'), url(./assets/fonts/card-id-copywrite.otf) format('opentype');
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1430px) {
   .Card-Wrapper{
     order: 1;
   }
