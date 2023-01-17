@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/amuletofnice/static/css/main.2c98db81.css",
-    "main.js": "/amuletofnice/static/js/main.fa387780.js",
+    "main.css": "/amuletofnice/static/css/main.1ab29c21.css",
+    "main.js": "/amuletofnice/static/js/main.8142973a.js",
     "static/js/787.82a693a1.chunk.js": "/amuletofnice/static/js/787.82a693a1.chunk.js",
     "static/media/generic-attack-blue.png": "/amuletofnice/static/media/generic-attack-blue.058749e271787aab3e7f.png",
     "static/media/generic-attack-red.png": "/amuletofnice/static/media/generic-attack-red.b6ef84f43acf77888e63.png",
+    "static/media/card-id-copywrite.otf": "/amuletofnice/static/media/card-id-copywrite.cc88d98de8e646e5ad3c.otf",
     "static/media/card-title-type.otf": "/amuletofnice/static/media/card-title-type.b34daa6433f1d6af3bf4.otf",
     "static/media/card-text.otf": "/amuletofnice/static/media/card-text.5c06e367fa3068de0678.otf",
     "index.html": "/amuletofnice/index.html",
-    "main.2c98db81.css.map": "/amuletofnice/static/css/main.2c98db81.css.map",
-    "main.fa387780.js.map": "/amuletofnice/static/js/main.fa387780.js.map",
+    "main.1ab29c21.css.map": "/amuletofnice/static/css/main.1ab29c21.css.map",
+    "main.8142973a.js.map": "/amuletofnice/static/js/main.8142973a.js.map",
     "787.82a693a1.chunk.js.map": "/amuletofnice/static/js/787.82a693a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c98db81.css",
-    "static/js/main.fa387780.js"
+    "static/css/main.1ab29c21.css",
+    "static/js/main.8142973a.js"
   ]
 }
