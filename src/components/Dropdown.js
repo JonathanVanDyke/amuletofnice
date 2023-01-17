@@ -16,7 +16,6 @@ const Dropdown = ({
       <Select
         placeholder={placeholder}
         defaultValue={defaultValue}
-        isSearchable={false}
         className="DropDown"
         onChange={handleSelect}
         options={options}

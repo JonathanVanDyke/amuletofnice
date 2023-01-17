@@ -56,21 +56,21 @@ const Homepage = () => {
   };
 
   // Cost Update
-  const [cost, setCost] = useState(0);
+  const [cost, setCost] = useState(" ");
 
   const onCostUpdate = (e) => {
     setCost(e.target.value);
   };
 
   // Attack Update
-  const [attack, setAttack] = useState(0);
+  const [attack, setAttack] = useState(" ");
 
   const onAttackUpdate = (e) => {
     setAttack(e.target.value);
   };
 
   // Defense Update
-  const [defense, setDefense] = useState(0);
+  const [defense, setDefense] = useState(" ");
 
   const onDefenseUpdate = (e) => {
     setDefense(e.target.value);
