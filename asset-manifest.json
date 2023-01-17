@@ -1,8 +1,17 @@
 {
   "files": {
     "main.css": "/amuletofnice/static/css/main.1ab29c21.css",
-    "main.js": "/amuletofnice/static/js/main.8142973a.js",
+    "main.js": "/amuletofnice/static/js/main.125cf416.js",
     "static/js/787.82a693a1.chunk.js": "/amuletofnice/static/js/787.82a693a1.chunk.js",
+    "static/media/Aria-Non-Attack-blue.png": "/amuletofnice/static/media/Aria-Non-Attack-blue.67ad81502e54a59b20fd.png",
+    "static/media/Aria-Attack-blue.png": "/amuletofnice/static/media/Aria-Attack-blue.d7d0bd4098a72bdab674.png",
+    "static/media/Aria-Non-Attack-red.png": "/amuletofnice/static/media/Aria-Non-Attack-red.ce06b5ffb3994d66ccb3.png",
+    "static/media/Aria-Attack-red.png": "/amuletofnice/static/media/Aria-Attack-red.e6761aeab24ce6289ddd.png",
+    "static/media/Aria-Non-Attack-yellow.png": "/amuletofnice/static/media/Aria-Non-Attack-yellow.69a2e470285701c43d55.png",
+    "static/media/Aria-Attack-yellow.png": "/amuletofnice/static/media/Aria-Attack-yellow.ede142c5e09903e29931.png",
+    "static/media/Aria-Instant-blue.png": "/amuletofnice/static/media/Aria-Instant-blue.895bb4ffaebf2ecae99a.png",
+    "static/media/Aria-Instant-red.png": "/amuletofnice/static/media/Aria-Instant-red.13921063b3712cc9bd51.png",
+    "static/media/Aria-Instant-yellow.png": "/amuletofnice/static/media/Aria-Instant-yellow.913150454bf5cf9bf839.png",
     "static/media/generic-attack-blue.png": "/amuletofnice/static/media/generic-attack-blue.058749e271787aab3e7f.png",
     "static/media/generic-attack-red.png": "/amuletofnice/static/media/generic-attack-red.b6ef84f43acf77888e63.png",
     "static/media/card-id-copywrite.otf": "/amuletofnice/static/media/card-id-copywrite.cc88d98de8e646e5ad3c.otf",
@@ -10,11 +19,11 @@
     "static/media/card-text.otf": "/amuletofnice/static/media/card-text.5c06e367fa3068de0678.otf",
     "index.html": "/amuletofnice/index.html",
     "main.1ab29c21.css.map": "/amuletofnice/static/css/main.1ab29c21.css.map",
-    "main.8142973a.js.map": "/amuletofnice/static/js/main.8142973a.js.map",
+    "main.125cf416.js.map": "/amuletofnice/static/js/main.125cf416.js.map",
     "787.82a693a1.chunk.js.map": "/amuletofnice/static/js/787.82a693a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ab29c21.css",
-    "static/js/main.8142973a.js"
+    "static/js/main.125cf416.js"
   ]
 }
