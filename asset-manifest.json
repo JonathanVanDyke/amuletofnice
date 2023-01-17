@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/amuletofnice/static/css/main.5a2ea17c.css",
+    "main.css": "/amuletofnice/static/css/main.27f80afe.css",
     "main.js": "/amuletofnice/static/js/main.9c521355.js",
     "static/js/787.82a693a1.chunk.js": "/amuletofnice/static/js/787.82a693a1.chunk.js",
     "static/media/Aria-Non-Attack-blue.png": "/amuletofnice/static/media/Aria-Non-Attack-blue.67ad81502e54a59b20fd.png",
@@ -18,12 +18,12 @@
     "static/media/card-title-type.otf": "/amuletofnice/static/media/card-title-type.b34daa6433f1d6af3bf4.otf",
     "static/media/card-text.otf": "/amuletofnice/static/media/card-text.5c06e367fa3068de0678.otf",
     "index.html": "/amuletofnice/index.html",
-    "main.5a2ea17c.css.map": "/amuletofnice/static/css/main.5a2ea17c.css.map",
+    "main.27f80afe.css.map": "/amuletofnice/static/css/main.27f80afe.css.map",
     "main.9c521355.js.map": "/amuletofnice/static/js/main.9c521355.js.map",
     "787.82a693a1.chunk.js.map": "/amuletofnice/static/js/787.82a693a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a2ea17c.css",
+    "static/css/main.27f80afe.css",
     "static/js/main.9c521355.js"
   ]
 }
