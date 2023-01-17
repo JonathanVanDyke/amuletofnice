@@ -86,18 +86,20 @@ const Homepage = () => {
         onAttackUpdate={onAttackUpdate}
         onDefenseUpdate={onDefenseUpdate}
       />
-      <Screenshot
-        borderName={borderName}
-        rightPos={rightPos}
-        topPos={topPos}
-        scale={scale}
-        title={title}
-        body={body}
-        type={type}
-        cost={cost}
-        attack={attack}
-        defense={defense}
-      />
+      <div className="Card-Wrapper">
+        <Screenshot
+          borderName={borderName}
+          rightPos={rightPos}
+          topPos={topPos}
+          scale={scale}
+          title={title}
+          body={body}
+          type={type}
+          cost={cost}
+          attack={attack}
+          defense={defense}
+        />
+      </div>
       <ImageOptions
         scale={scale}
         topPos={topPos}
