@@ -76,10 +76,10 @@ const Screenshot = ({
                 top: `${topPos}px`,
                 right: `${rightPos}px`,
               }}
-              src={imageURL || genericAttackRed}
+              src={imageURL || null}
               height="100%"
               width="500"
-              alt="card-background"
+              alt=" "
             />
           </div>
         </div>
