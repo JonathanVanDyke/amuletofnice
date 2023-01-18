@@ -164,6 +164,16 @@ body {
   margin: 4px;
 }
 
+.Image-Inline {
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+}
+
+.Symbol-Tray {
+  display: flex;
+}
+
 .Download-Button {
   margin-bottom: 10px;
 }
