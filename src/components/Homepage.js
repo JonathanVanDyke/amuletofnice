@@ -43,9 +43,12 @@ const Homepage = () => {
 
   // Body Text
   const [body, setBody] = useState("");
+  const [maskedBody, setMaskedBody] = useState("");
 
   const onBodyUpdate = (e) => {
-    setBody(e.target.value);
+    setMaskedBody(e.target.value);
+    const val = convertSymbols(e.target.value);
+    setBody(val);
   };
 
   // Type Text
@@ -76,11 +79,27 @@ const Homepage = () => {
     setDefense(e.target.value);
   };
 
+  const convertSymbols = (chars) => {
+    let arr = chars.split("$");
+    arr = arr.map((ele) => {
+      if (ele === "res") {
+        return `<img style='width:16px' src=${"https://jonathanvandyke.github.io/hostImages/Symbol001.png"} />`;
+      } else if (ele === "atk") {
+        return `<img style='width:16px' src=${"https://jonathanvandyke.github.io/hostImages/Symbol002.png"} />`;
+      } else if (ele === "hp") {
+        return `<img style='width:16px' src=${"https://jonathanvandyke.github.io/hostImages/Symbol003.png"} />`;
+      }
+      return ele;
+    });
+    return arr.join("");
+  };
+
   return (
     <div className="Homepage">
       <TextOptions
         onTitleUpdate={onTitleUpdate}
         onBodyUpdate={onBodyUpdate}
+        maskedBody={maskedBody}
         onTypeUpdate={onTypeUpdate}
         onCostUpdate={onCostUpdate}
         onAttackUpdate={onAttackUpdate}

@@ -159,6 +159,21 @@ body {
   font-size: 18px;
 }
 
+.Header-Text {
+  color: white; 
+  margin: 4px;
+}
+
+.Image-Inline {
+  display: flex;
+  flex-direction: column;
+  margin: 13px;
+}
+
+.Symbol-Tray {
+  display: flex;
+}
+
 .Download-Button {
   margin-bottom: 10px;
 }
