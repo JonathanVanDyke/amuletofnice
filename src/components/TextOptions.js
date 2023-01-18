@@ -9,7 +9,8 @@ const TextOptions = ({
   onCostUpdate,
   onAttackUpdate,
   onDefenseUpdate,
-  onAddSymbol,
+  onKeyDown,
+  onMouseUp,
 }) => {
   return (
     <div className="TextOptions">
@@ -72,6 +73,8 @@ const TextOptions = ({
       <textarea
         className="BodyInput"
         onChange={onBodyUpdate}
+        onKeyDown={onKeyDown}
+        onMouseUp={onMouseUp}
         rows="6"
         cols="80"
         value={maskedBody}

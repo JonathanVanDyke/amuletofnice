@@ -4,6 +4,8 @@ import ImageOptions from "./ImageOptions";
 import TextOptions from "./TextOptions";
 
 const Homepage = () => {
+  const [cursorPos, setCursorPos] = useState(0);
+
   // DropDown
   const [borderName, setBorderName] = useState("generic-attack-red");
 
@@ -46,6 +48,7 @@ const Homepage = () => {
   const [maskedBody, setMaskedBody] = useState("");
 
   const onBodyUpdate = (e) => {
+    setCursorPos(e.target.selectionStart);
     setMaskedBody(e.target.value);
     const val = convertSymbols(e.target.value);
     setBody(val);
@@ -79,6 +82,20 @@ const Homepage = () => {
     setDefense(e.target.value);
   };
 
+  // Create return
+  const onKeyDown = (e) => {
+    if (e.key === "Enter" && e.shiftKey) {
+      setMaskedBody(
+        maskedBody.slice(0, cursorPos) + "<br/>" + maskedBody.slice(cursorPos)
+      );
+    }
+  };
+
+  // Cursor Pos
+  const onMouseUp = (e) => {
+    setCursorPos(e.target.selectionStart);
+  };
+
   const convertSymbols = (chars) => {
     let arr = chars.split("$");
     arr = arr.map((ele) => {
@@ -104,6 +121,8 @@ const Homepage = () => {
         onCostUpdate={onCostUpdate}
         onAttackUpdate={onAttackUpdate}
         onDefenseUpdate={onDefenseUpdate}
+        onKeyDown={onKeyDown}
+        onMouseUp={onMouseUp}
       />
       <div className="Card-Wrapper">
         <Screenshot
