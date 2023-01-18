@@ -46,18 +46,9 @@ const Homepage = () => {
   const [maskedBody, setMaskedBody] = useState("");
 
   const onBodyUpdate = (e) => {
-    const isDeleting = e.target.value.length < body.length;
-    if (e.target.value.slice(-5) === "$adde" && isDeleting) {
-      setBody(body.slice(0, -89));
-      setMaskedBody(e.target.value.slice(0, -5));
-    } else {
-      setBody(e.target.value);
-      if (isDeleting) {
-        setMaskedBody(maskedBody.slice(0, -1));
-      } else {
-        setMaskedBody(maskedBody + e.target.value.slice(-1));
-      }
-    }
+    setMaskedBody(e.target.value);
+    const val = convertSymbols(e.target.value);
+    setBody(val);
   };
 
   // Type Text
@@ -88,10 +79,19 @@ const Homepage = () => {
     setDefense(e.target.value);
   };
 
-  // Add symbol
-  const onAddSymbol = (e) => {
-    setBody(body + e.target.value);
-    setMaskedBody(maskedBody + "$added");
+  const convertSymbols = (chars) => {
+    let arr = chars.split("$");
+    arr = arr.map((ele) => {
+      if (ele === "res") {
+        return `<img style='width:16px' src=${"https://jonathanvandyke.github.io/hostImages/Symbol001.png"} />`;
+      } else if (ele === "atk") {
+        return `<img style='width:16px' src=${"https://jonathanvandyke.github.io/hostImages/Symbol002.png"} />`;
+      } else if (ele === "hp") {
+        return `<img style='width:16px' src=${"https://jonathanvandyke.github.io/hostImages/Symbol003.png"} />`;
+      }
+      return ele;
+    });
+    return arr.join("");
   };
 
   return (
@@ -104,7 +104,6 @@ const Homepage = () => {
         onCostUpdate={onCostUpdate}
         onAttackUpdate={onAttackUpdate}
         onDefenseUpdate={onDefenseUpdate}
-        onAddSymbol={onAddSymbol}
       />
       <div className="Card-Wrapper">
         <Screenshot

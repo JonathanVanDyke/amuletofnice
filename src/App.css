@@ -167,7 +167,7 @@ body {
 .Image-Inline {
   display: flex;
   flex-direction: column;
-  margin: 3px;
+  margin: 13px;
 }
 
 .Symbol-Tray {

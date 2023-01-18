@@ -1,18 +1,17 @@
 import React from "react";
 
-const AddImageInline = ({ onAddSymbol, imgUrl }) => {
+const AddImageInline = ({ imgUrl, code }) => {
   return (
     <div className="Image-Inline">
       <div>
         <img style={{ margin: "0px", height: "25px" }} src={imgUrl} />
       </div>
-      <button
-        style={{ margin: "0px" }}
-        onClick={onAddSymbol}
-        value={`<img style='width:16px' src=${imgUrl} />`}
+      <div
+        style={{ color: "white", fontSize: "20px", margin: "0px" }}
+        value={code}
       >
-        Add
-      </button>
+        {code}
+      </div>
     </div>
   );
 };

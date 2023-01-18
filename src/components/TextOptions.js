@@ -42,17 +42,20 @@ const TextOptions = ({
         </div>
       </div>
       <h5 className="Header-Text">BODY</h5>
+      <div style={{ color: "white", marginTop: "5px", fontSize: "20px" }}>
+        Type codes below for symbols
+      </div>
       <div className="Symbol-Tray">
         <AddImageInline
-          onAddSymbol={onAddSymbol}
+          code={"$res$"}
           imgUrl={"https://jonathanvandyke.github.io/hostImages/Symbol001.png"}
         />
         <AddImageInline
-          onAddSymbol={onAddSymbol}
+          code={"$atk$"}
           imgUrl={"https://jonathanvandyke.github.io/hostImages/Symbol002.png"}
         />
         <AddImageInline
-          onAddSymbol={onAddSymbol}
+          code={"$hp$"}
           imgUrl={"https://jonathanvandyke.github.io/hostImages/Symbol003.png"}
         />
       </div>
