@@ -52,7 +52,7 @@ const ImageOptions = ({
       <Dropdown
         placeholder="Select Border"
         onDropDownSelect={onDropDownSelect}
-        defaultValue="generic-attack-red"
+        defaultValue="Generic-Attack-red"
         options={BORDER_ART_LABELS}
       />
     </div>

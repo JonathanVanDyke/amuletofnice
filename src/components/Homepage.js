@@ -5,7 +5,7 @@ import TextOptions from "./TextOptions";
 
 const Homepage = () => {
   // DropDown
-  const [borderName, setBorderName] = useState("generic-attack-red");
+  const [borderName, setBorderName] = useState("Generic-Attack-red");
 
   const onDropDownSelect = (name) => {
     setBorderName(name);

@@ -2,7 +2,7 @@ import React, { createRef, useState, useEffect } from "react";
 import { useScreenshot, createFileName } from "use-react-screenshot";
 import UploadImage from "./UploadImage";
 import borderArts from "../constants/borderArts";
-import genericAttackRed from "../assets/generic-attack-red.png";
+import genericAttackRed from "../assets/Generic-Attack-red.png";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 
