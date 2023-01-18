@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/amuletofnice/static/css/main.9859f69f.css",
-    "main.js": "/amuletofnice/static/js/main.785c1ad5.js",
+    "main.js": "/amuletofnice/static/js/main.d3495399.js",
     "static/js/787.82a693a1.chunk.js": "/amuletofnice/static/js/787.82a693a1.chunk.js",
     "static/media/Guardian-Instant-red.png": "/amuletofnice/static/media/Guardian-Instant-red.9b6c9e82e0c984ea6fe2.png",
     "static/media/Guardian-Instant-yellow.png": "/amuletofnice/static/media/Guardian-Instant-yellow.5d90857c8a29465f575d.png",
@@ -124,11 +124,11 @@
     "static/media/card-text.otf": "/amuletofnice/static/media/card-text.5c06e367fa3068de0678.otf",
     "index.html": "/amuletofnice/index.html",
     "main.9859f69f.css.map": "/amuletofnice/static/css/main.9859f69f.css.map",
-    "main.785c1ad5.js.map": "/amuletofnice/static/js/main.785c1ad5.js.map",
+    "main.d3495399.js.map": "/amuletofnice/static/js/main.d3495399.js.map",
     "787.82a693a1.chunk.js.map": "/amuletofnice/static/js/787.82a693a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9859f69f.css",
-    "static/js/main.785c1ad5.js"
+    "static/js/main.d3495399.js"
   ]
 }
