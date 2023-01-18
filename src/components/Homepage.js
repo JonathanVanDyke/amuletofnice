@@ -46,15 +46,10 @@ const Homepage = () => {
   const [maskedBody, setMaskedBody] = useState("");
 
   const onBodyUpdate = (e) => {
-    // determine delete or add char
     const isDeleting = e.target.value.length < body.length;
-
-    let value = e.target.value;
-
-    // trim #adde from body
-    if (e.target.value.slice(-5) === "$adde") {
-      console.log("TRIMMING BODY");
-      value = e.target.value.slice(0, -6);
+    if (e.target.value.slice(-5) === "$adde" && isDeleting) {
+      setBody(body.slice(0, -89));
+      setMaskedBody(e.target.value.slice(0, -5));
     } else {
       setBody(e.target.value);
       if (isDeleting) {
