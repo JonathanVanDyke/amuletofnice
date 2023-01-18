@@ -48,9 +48,10 @@ const Homepage = () => {
   const [maskedBody, setMaskedBody] = useState("");
 
   const onBodyUpdate = (e) => {
+    const value = e.target.value;
     setCursorPos(e.target.selectionStart);
-    setMaskedBody(e.target.value);
-    const val = convertSymbols(e.target.value);
+    setMaskedBody(value);
+    const val = convertSymbols(value);
     setBody(val);
   };
 
@@ -96,6 +97,19 @@ const Homepage = () => {
     setCursorPos(e.target.selectionStart);
   };
 
+  // Tip
+  const onFocus = (e) => {
+    if (maskedBody === "Tip: Press Shift+Enter to make a new line...") {
+      setMaskedBody("");
+    }
+  };
+
+  const onBlur = (e) => {
+    if (!maskedBody) {
+      setMaskedBody("Tip: Press Shift+Enter to make a new line...");
+    }
+  };
+
   const convertSymbols = (chars) => {
     let arr = chars.split("$");
     arr = arr.map((ele) => {
@@ -122,7 +136,9 @@ const Homepage = () => {
         onAttackUpdate={onAttackUpdate}
         onDefenseUpdate={onDefenseUpdate}
         onKeyDown={onKeyDown}
+        onBlur={onBlur}
         onMouseUp={onMouseUp}
+        onFocus={onFocus}
       />
       <div className="Card-Wrapper">
         <Screenshot

@@ -11,6 +11,8 @@ const TextOptions = ({
   onDefenseUpdate,
   onKeyDown,
   onMouseUp,
+  onFocus,
+  onBlur,
 }) => {
   return (
     <div className="TextOptions">
@@ -74,7 +76,9 @@ const TextOptions = ({
         className="BodyInput"
         onChange={onBodyUpdate}
         onKeyDown={onKeyDown}
+        onBlur={onBlur}
         onMouseUp={onMouseUp}
+        onFocus={onFocus}
         rows="6"
         cols="80"
         value={maskedBody}

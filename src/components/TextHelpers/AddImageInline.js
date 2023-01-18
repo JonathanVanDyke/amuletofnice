@@ -4,7 +4,11 @@ const AddImageInline = ({ imgUrl, code }) => {
   return (
     <div className="Image-Inline">
       <div>
-        <img style={{ margin: "0px", height: "25px" }} src={imgUrl} />
+        <img
+          style={{ margin: "0px", height: "25px" }}
+          src={imgUrl}
+          alt="symbol"
+        />
       </div>
       <div
         style={{ color: "white", fontSize: "20px", margin: "0px" }}
