@@ -42,7 +42,7 @@ const Homepage = () => {
   };
 
   // Body Text
-  const [body, setBody] = useState("");
+  let [body, setBody] = useState("");
 
   const onBodyUpdate = (e) => {
     setBody(e.target.value);
@@ -76,15 +76,29 @@ const Homepage = () => {
     setDefense(e.target.value);
   };
 
+  // Add symbol
+  const [symbol, setSymbol] = useState("");
+
+  const onAddSymbol = (e) => {
+    setSymbol(e.target.value);
+    setBody(body + symbol);
+  };
+
+  // useEffect(() => {
+  //   symbol && setBody(body + symbol);
+  // }, [symbol]);
+
   return (
     <div className="Homepage">
       <TextOptions
         onTitleUpdate={onTitleUpdate}
         onBodyUpdate={onBodyUpdate}
+        body={body}
         onTypeUpdate={onTypeUpdate}
         onCostUpdate={onCostUpdate}
         onAttackUpdate={onAttackUpdate}
         onDefenseUpdate={onDefenseUpdate}
+        onAddSymbol={onAddSymbol}
       />
       <div className="Card-Wrapper">
         <Screenshot

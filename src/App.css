@@ -159,6 +159,11 @@ body {
   font-size: 18px;
 }
 
+.Header-Text {
+  color: white; 
+  margin: 4px;
+}
+
 .Download-Button {
   margin-bottom: 10px;
 }
