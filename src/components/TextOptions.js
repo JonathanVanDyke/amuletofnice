@@ -45,6 +45,15 @@ const TextOptions = ({
       <div style={{ color: "white", marginTop: "5px", fontSize: "20px" }}>
         Type codes below for symbols
       </div>
+      <div style={{ color: "yellow", marginTop: "5px", fontSize: "15px" }}>
+        *for some reason they won't show up on
+      </div>
+      <div style={{ color: "yellow", marginTop: "5px", fontSize: "15px" }}>
+        the downloaded image, so you'll need
+      </div>
+      <div style={{ color: "yellow", marginTop: "5px", fontSize: "15px" }}>
+        to screenshot manually for now.
+      </div>
       <div className="Symbol-Tray">
         <AddImageInline
           code={"$res$"}
