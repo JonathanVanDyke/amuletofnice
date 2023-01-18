@@ -4,7 +4,7 @@ import AddImageInline from "./TextHelpers/AddImageInline";
 const TextOptions = ({
   onTitleUpdate,
   onBodyUpdate,
-  body,
+  maskedBody,
   onTypeUpdate,
   onCostUpdate,
   onAttackUpdate,
@@ -62,7 +62,7 @@ const TextOptions = ({
         onChange={onBodyUpdate}
         rows="6"
         cols="80"
-        value={body}
+        value={maskedBody}
       />
       <h5 style={{ color: "white", margin: "4px" }}>TYPE</h5>
       <input className="TitleInput" type="text-box" onChange={onTypeUpdate} />

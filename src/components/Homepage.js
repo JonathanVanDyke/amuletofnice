@@ -42,10 +42,27 @@ const Homepage = () => {
   };
 
   // Body Text
-  let [body, setBody] = useState("");
+  const [body, setBody] = useState("");
+  const [maskedBody, setMaskedBody] = useState("");
 
   const onBodyUpdate = (e) => {
-    setBody(e.target.value);
+    // determine delete or add char
+    const isDeleting = e.target.value.length < body.length;
+
+    let value = e.target.value;
+
+    // trim #adde from body
+    if (e.target.value.slice(-5) === "$adde") {
+      console.log("TRIMMING BODY");
+      value = e.target.value.slice(0, -6);
+    } else {
+      setBody(e.target.value);
+      if (isDeleting) {
+        setMaskedBody(maskedBody.slice(0, -1));
+      } else {
+        setMaskedBody(maskedBody + e.target.value.slice(-1));
+      }
+    }
   };
 
   // Type Text
@@ -79,6 +96,7 @@ const Homepage = () => {
   // Add symbol
   const onAddSymbol = (e) => {
     setBody(body + e.target.value);
+    setMaskedBody(maskedBody + "$added");
   };
 
   return (
@@ -86,7 +104,7 @@ const Homepage = () => {
       <TextOptions
         onTitleUpdate={onTitleUpdate}
         onBodyUpdate={onBodyUpdate}
-        body={body}
+        maskedBody={maskedBody}
         onTypeUpdate={onTypeUpdate}
         onCostUpdate={onCostUpdate}
         onAttackUpdate={onAttackUpdate}
