@@ -1,5 +1,5 @@
 import React from "react";
-import Symbol1 from "../assets/Symbols/Symbol001.png";
+import AddImageInline from "./TextHelpers/AddImageInline";
 
 const TextOptions = ({
   onTitleUpdate,
@@ -42,23 +42,21 @@ const TextOptions = ({
         </div>
       </div>
       <h5 className="Header-Text">BODY</h5>
-      <div>
-        <div>
-          <img
-            style={{ margin: "0px", height: "25px" }}
-            src="https://jonathanvandyke.github.io/hostImages/Symbol001.png"
-          />
-        </div>
-        <button
-          style={{ margin: "0px" }}
-          onClick={onAddSymbol}
-          value={
-            "<img style='width:16px' src='https://jonathanvandyke.github.io/hostImages/Symbol001.png' />"
-          }
-        >
-          Add
-        </button>
+      <div className="Symbol-Tray">
+        <AddImageInline
+          onAddSymbol={onAddSymbol}
+          imgUrl={"https://jonathanvandyke.github.io/hostImages/Symbol001.png"}
+        />
+        <AddImageInline
+          onAddSymbol={onAddSymbol}
+          imgUrl={"https://jonathanvandyke.github.io/hostImages/Symbol002.png"}
+        />
+        <AddImageInline
+          onAddSymbol={onAddSymbol}
+          imgUrl={"https://jonathanvandyke.github.io/hostImages/Symbol003.png"}
+        />
       </div>
+
       <textarea
         className="BodyInput"
         onChange={onBodyUpdate}

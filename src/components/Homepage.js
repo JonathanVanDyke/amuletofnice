@@ -77,16 +77,9 @@ const Homepage = () => {
   };
 
   // Add symbol
-  const [symbol, setSymbol] = useState("");
-
   const onAddSymbol = (e) => {
-    setSymbol(e.target.value);
-    setBody(body + symbol);
+    setBody(body + e.target.value);
   };
-
-  // useEffect(() => {
-  //   symbol && setBody(body + symbol);
-  // }, [symbol]);
 
   return (
     <div className="Homepage">
